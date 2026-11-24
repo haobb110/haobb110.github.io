@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Machine learning and AI product projects by Zhibin Hao.">
+  <title>Zhibin Hao — AI Portfolio</title>
+  <style>
+    :root { color-scheme: light; --ink: #172d28; --muted: #48645b; --paper: #f6f7f0; --line: #bdccc1; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 Inter, system-ui, sans-serif; }
+    main { max-width: 900px; padding: 0 clamp(22px, 5vw, 62px) 70px; margin: auto; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--line); }
+    a { color: inherit; text-underline-offset: 4px; }
+    header { padding: clamp(44px, 8vw, 82px) 0 40px; }
+    h1 { font: 600 clamp(3.3rem, 10vw, 6.4rem)/1.05 Georgia, serif; letter-spacing: -.065em; margin: 0 0 15px; }
+    header p { max-width: 36em; margin: 0; color: var(--muted); font-size: 1.15rem; }
+    h2 { font-size: 1rem; margin: 0 0 12px; }
+    details { border-top: 1px solid var(--line); }
+    details:last-child { border-bottom: 1px solid var(--line); }
+    summary { padding: 20px 0; cursor: pointer; font: 500 clamp(1.15rem, 3vw, 1.55rem)/1.4 Georgia, serif; }
+    summary:hover, a:hover { color: #226653; }
+    :focus-visible { outline: 2px solid #246d52; outline-offset: 4px; }
+    details p { margin: 0 0 22px; max-width: 41em; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="https://github.com/haobb110">GitHub ↗</a></nav>
+    <header><h1>Zhibin Hao</h1><p>I build recommender systems and AI products. My research at Tsinghua University explores how to recover watermarks from edited images.</p></header>
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Selected projects</h2>
+      <details open><summary>Amap · Recommending nearby places</summary><p>I designed three-token identifiers that capture a place’s location and category. The updated retrieval model cut average inference time from 56 ms to 32 ms.</p></details>
+      <details><summary>DualShield · Image watermarking</summary><p>I studied how to embed watermarks during diffusion image generation and detect them after editing. Published at Computer Graphics International 2025.</p></details>
+      <details><summary>MiniOneRec · Generative recommendation</summary><p>I reproduced a product recommendation system using semantic IDs and tested ranking rewards on the Amazon Industrial dataset.</p></details>
+      <details><summary>Conversational AI · Product management</summary><p>I worked as a product manager on an AI interviewer and a healthcare customer support chatbot.</p></details>
+    </section>
+  </main>
+</body>
+</html>
