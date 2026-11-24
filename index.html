@@ -3,38 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Machine learning and AI product projects by Zhibin Hao.">
+  <meta name="theme-color" content="#f8f6ef">
+  <meta name="description" content="Zhibin Hao's portfolio of recommender systems, generative AI research and conversational products.">
   <title>Zhibin Hao — AI Portfolio</title>
-  <style>
-    :root { color-scheme: light; --ink: #172d28; --muted: #48645b; --paper: #f6f7f0; --line: #bdccc1; }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 Inter, system-ui, sans-serif; }
-    main { max-width: 900px; padding: 0 clamp(22px, 5vw, 62px) 70px; margin: auto; }
-    nav { display: flex; justify-content: space-between; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--line); }
-    a { color: inherit; text-underline-offset: 4px; }
-    header { padding: clamp(44px, 8vw, 82px) 0 40px; }
-    h1 { font: 600 clamp(3.3rem, 10vw, 6.4rem)/1.05 Georgia, serif; letter-spacing: -.065em; margin: 0 0 15px; }
-    header p { max-width: 36em; margin: 0; color: var(--muted); font-size: 1.15rem; }
-    h2 { font-size: 1rem; margin: 0 0 12px; }
-    details { border-top: 1px solid var(--line); }
-    details:last-child { border-bottom: 1px solid var(--line); }
-    summary { padding: 20px 0; cursor: pointer; font: 500 clamp(1.15rem, 3vw, 1.55rem)/1.4 Georgia, serif; }
-    summary:hover, a:hover { color: #226653; }
-    :focus-visible { outline: 2px solid #246d52; outline-offset: 4px; }
-    details p { margin: 0 0 22px; max-width: 41em; color: var(--muted); }
-  </style>
+  <link rel="stylesheet" href="portfolio.css">
 </head>
-<body>
-  <main>
-    <nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="https://github.com/haobb110">GitHub ↗</a></nav>
-    <header><h1>Zhibin Hao</h1><p>I build recommender systems and AI products. My research at Tsinghua University explores how to recover watermarks from edited images.</p></header>
-    <section id="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title">Selected projects</h2>
-      <details open><summary>Amap · Recommending nearby places</summary><p>I designed three-token identifiers that capture a place’s location and category. The updated retrieval model cut average inference time from 56 ms to 32 ms.</p></details>
-      <details><summary>DualShield · Image watermarking</summary><p>I studied how to embed watermarks during diffusion image generation and detect them after editing. Published at Computer Graphics International 2025.</p></details>
-      <details><summary>MiniOneRec · Generative recommendation</summary><p>I reproduced a product recommendation system using semantic IDs and tested ranking rewards on the Amazon Industrial dataset.</p></details>
-      <details><summary>Conversational AI · Product management</summary><p>I worked as a product manager on an AI interviewer and a healthcare customer support chatbot.</p></details>
-    </section>
-  </main>
+<body id="top">
+  <a class="skip" href="#work">Skip to projects</a>
+  <div class="wrap">
+    <header class="mast">
+      <a class="signature" href="#top" aria-label="Zhibin Hao, home"><span class="monogram" aria-hidden="true">zh</span>Zhibin Hao</a>
+      <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a class="external" href="https://github.com/haobb110">GitHub ↗</a></nav>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="name">
+        <div class="intro">
+          <p class="role">Machine learning engineer</p>
+          <h1 id="name">Zhibin <i>Hao.</i></h1>
+          <p class="lede">I build recommender systems and AI products, and study how images can carry invisible watermarks.</p>
+          <a class="button" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+        </div>
+        <figure class="landscape"><img src="coast.webp" width="840" height="650" alt="An illustrated indigo coastline beneath a pale gold sun."></figure>
+      </section>
+      <section id="work" aria-labelledby="work-title">
+        <div class="section-title"><h2 id="work-title">Selected <i>work</i></h2></div>
+        <div class="grid">
+          <details class="project">
+            <summary><img class="cover" src="map.webp" width="680" height="320" alt=""><span class="meta">Amap · Machine learning</span><span class="project-title">Recommending nearby places</span><span class="tease">A faster way to retrieve local recommendations.</span><span class="toggle" aria-hidden="true"></span></summary>
+            <div class="story"><p>I designed three-token identifiers that encode a place’s location and category. The updated retrieval model cut average inference time from 56 ms to 32 ms.</p></div>
+          </details>
+          <details class="project">
+            <summary><img class="cover" src="wave.webp" width="680" height="320" alt=""><span class="meta">DualShield · Research</span><span class="project-title">Invisible image watermarks</span><span class="tease">Embedding a signature during diffusion.</span><span class="toggle" aria-hidden="true"></span></summary>
+            <div class="story"><p>I studied how to embed a watermark during image generation and detect it after editing. This work was published at Computer Graphics International 2025.</p></div>
+          </details>
+          <details class="project">
+            <summary><img class="cover" src="codes.webp" loading="lazy" width="680" height="320" alt=""><span class="meta">MiniOneRec · Machine learning</span><span class="project-title">Learning what comes next</span><span class="tease">Generating product recommendations with semantic IDs.</span><span class="toggle" aria-hidden="true"></span></summary>
+            <div class="story"><p>I reproduced an open-source recommendation pipeline and tested rule-based and ranking rewards on the Amazon Industrial dataset.</p></div>
+          </details>
+          <details class="project">
+            <summary><img class="cover" src="chat.webp" loading="lazy" width="680" height="320" alt=""><span class="meta">Conversational AI · Product</span><span class="project-title">Designing for dialogue</span><span class="tease">An AI interviewer and a healthcare support chatbot.</span><span class="toggle" aria-hidden="true"></span></summary>
+            <div class="story"><p>I worked as a product manager on two conversational tools, one for conducting interviews and one for answering healthcare customer inquiries.</p></div>
+          </details>
+        </div>
+      </section>
+      <section id="about" aria-labelledby="about-title"><h2 id="about-title">About <i>me</i></h2><p>I’m a master’s student at Tsinghua University. At Amap, I worked on how models recommend places nearby. My research now looks at what happens to an image’s watermark when someone edits the image.</p></section>
+    </main>
+    <footer><span>Zhibin Hao</span><a href="#top">Back to top ↑</a></footer>
+  </div>
 </body>
 </html>
